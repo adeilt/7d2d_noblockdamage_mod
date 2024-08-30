@@ -66,7 +66,6 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-3']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-4']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-5']" />
-	<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask']/@value"></append>
 	<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']">
 		<property name="AITask" value="
 			Territorial|
