@@ -1,0 +1,44 @@
+Version v13
+Update for A20
+Remove "Swim" from AITask property lists and reorder list
+Remove defunct AItask removal lines
+
+Version v12
+Shortened Folder designation
+
+Version v11
+Removed redundant lines causing console warnings
+
+Version v10
+Fixed/Updated the usage of effect_groups governing DamageModifier
+
+Version v9
+Added missing lines for some entities (runaway)
+Adjusted values to A18 version (distances to approach/attack)
+Added missing address/reference (missing "class=" in new "data" line that replaced "paraml" (cause of bug))
+Added new entities (coyote, mountain lion and bossgrace(used to use animalTemplate but now separate))
+
+Version v8
+Changed "paraml" to "data" in AI Tasks for Entityclasses
+Added "EntityEnemyAnimal,0" to appropriate Entities AI Tasks
+
+Version v7
+Fixed warning (removed line that is no longer needed since the target was removed by developers)
+
+Version v6
+Prefaced file name with author, for better folder organization. Not a neccessary update as far as features are considered.
+
+Version v5
+Updated to use Mods folder via xpaths
+
+Version v4
+added items.xml with changes to zombies block damage, reducing it to 1. (lowest it will go)
+
+Version v3
+Updated to b199
+
+Version v2
+Removed another AITask that was causing block damage
+
+Version v1
+Initial upload

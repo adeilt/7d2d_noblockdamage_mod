@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="JRB_TZ_NoBlockDamage_A20v13" />
+		<Description value="Removes AITasks that tell zombies and animals to attack blocks, reduces block damage to 1" />
+		<Author value="jrbarrio" />
+		<Version value="13.0" />
+
+	</ModInfo>
+</xml>
