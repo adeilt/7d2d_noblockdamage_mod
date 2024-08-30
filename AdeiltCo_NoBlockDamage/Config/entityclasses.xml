@@ -66,13 +66,16 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-3']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-4']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask-5']" />
-	<set xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask']/@value">
-	 	ApproachAndAttackTarget class=EntityPlayer,20,EntityBandit,20|
-		ApproachSpot|
-		Look|
-		Wander|
-	</set>
-
+	<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='AITask']/@value"></append>
+	<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']">
+		<property name="AITask" value="
+			Territorial|
+			ApproachAndAttackTarget class=EntityPlayer,20,EntityBandit,20|
+			ApproachSpot|
+			Look|
+			Wander|
+		"/>
+	</append>
 
 <!-- animalBear -->
 	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-1']" />
@@ -83,13 +86,16 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-6']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-7']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask-8']" />
-	<set xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask']/@value">
-		Territorial|
-	 	ApproachAndAttackTarget class=EntityPlayer,25,EntityBandit,25,EntityAnimalStag,40,EntityZombie,30|
-		ApproachSpot|
-		Look|
-		Wander|
-	</set>
+	<append xpath="/entity_classes/entity_class[@name='animalBear']">
+		<property name="AITask" value="
+			Territorial|
+			ApproachAndAttackTarget class=EntityPlayer,25,EntityBandit,25,EntityAnimalStag,40,EntityZombie,30|
+			ApproachSpot|
+			Look|
+			Wander|
+		"/>
+	</append>
+
 
 
 <!-- animalZombieBear -->
@@ -102,14 +108,17 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-7']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-8']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='AITask-9']" />
-	<set xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='AITask']/@value">
-		Territorial|
-		ApproachDistraction|
-	 	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityAnimalStag,40|
-		ApproachSpot|
-		Look|
-		Wander|
-	</set>
+	<append xpath="/entity_classes/entity_class[@name='animalZombieBear']">
+		<property name="AITask" value="
+			Territorial|
+			ApproachDistraction|
+			ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityAnimalStag,40|
+			ApproachSpot|
+			Look|
+			Wander|
+		"/>
+	</append>
+
 
 <!-- animalWolf -->
 	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-1']" />
@@ -120,14 +129,17 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-6']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-7']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask-8']" />
-	<set xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='AITask']/@value">
-		Territorial|
-		RunawayWhenHurt runChance=0.5;healthPer=0.3;healthPerMax=0.6|
-	 	ApproachAndAttackTarget class=EntityPlayer,15,EntityBandit,15,EntityAnimalStag,40,EntityZombie,20|
-		ApproachSpot|
-		Look|
-		Wander|
-	</set>
+	<append xpath="/entity_classes/entity_class[@name='animalWolf']">
+		<property name="AITask" value="
+			Territorial|
+			RunawayWhenHurt runChance=0.5;healthPer=0.3;healthPerMax=0.6|
+			ApproachAndAttackTarget class=EntityPlayer,15,EntityBandit,15,EntityAnimalStag,40,EntityZombie,20|
+			ApproachSpot|
+			Look|
+			Wander|
+		"/>
+	</append>
+
 	
 <!-- animalCoyote -->
 	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-1']" />
@@ -138,14 +150,17 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-6']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-7']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask-8']" />
-	<set xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='AITask']/@value">
-		Territorial|
-		RunawayWhenHurt runChance=.9;healthPer=.6;healthPerMax=0.75|
-	 	ApproachAndAttackTarget class=EntityPlayer,10,EntityAnimalRabbit,8|
-		ApproachSpot|
-		Look|
-		Wander|
-	</set>
+	<append xpath="/entity_classes/entity_class[@name='animalCoyote']">
+		<property name="AITask" value="
+			Territorial|
+			RunawayWhenHurt runChance=.9;healthPer=.6;healthPerMax=0.75|
+			ApproachAndAttackTarget class=EntityPlayer,10,EntityAnimalRabbit,8|
+			ApproachSpot|
+			Look|
+			Wander|
+		"/>
+	</append>
+
 
 <!-- animalDireWolf -->
 	<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='AITask']/@value">
@@ -167,15 +182,18 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-7']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-8']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask-9']" />
-	<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='AITask']/@value">
-		Leap|
-		Territorial|
-		RunawayWhenHurt runChance=.4;healthPer=.1;healthPerMax=.4|
-		ApproachAndAttackTarget class=EntityPlayer,15,EntityBandit,15,EntityAnimalStag,30,EntityZombie,20|
-		ApproachSpot|
-		Look|
-		Wander|
-	</set>
+	<append xpath="/entity_classes/entity_class[@name='animalMountainLion']">
+		<property name="AITask" value="
+			Leap|
+			Territorial|
+			RunawayWhenHurt runChance=.4;healthPer=.1;healthPerMax=.4|
+			ApproachAndAttackTarget class=EntityPlayer,15,EntityBandit,15,EntityAnimalStag,30,EntityZombie,20|
+			ApproachSpot|
+			Look|
+			Wander|
+		"/>
+	</append>
+
 
 <!-- animalZombieDog -->
 	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-1']" />
@@ -185,14 +203,17 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-5']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-6']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask-7']" />
-	<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='AITask']/@value">
-		Territorial|
-		RunawayWhenHurt runChance=.4;healthPer=.1;healthPerMax=.4|
-		ApproachAndAttackTarget class=EntityPlayer,20,EntityBandit,20|
-		ApproachSpot|
-		Look|
-		Wander|
-	</set>
+	<append xpath="/entity_classes/entity_class[@name='animalZombieDog']">
+		<property name="AITask" value="
+			Territorial|
+			RunawayWhenHurt runChance=.4;healthPer=.1;healthPerMax=.4|
+			ApproachAndAttackTarget class=EntityPlayer,20,EntityBandit,20|
+			ApproachSpot|
+			Look|
+			Wander|
+		"/>
+	</append>
+
 
 <!-- animalSnake -->
 	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-1']" />
@@ -202,13 +223,16 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-5']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-6']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask-7']" />
-	<set xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='AITask']/@value">
-		Territorial|
-		ApproachAndAttackTarget class=EntityPlayer,15,EntityNPC,15|
-		ApproachSpot|
-		Look|
-		Wander|
-	</set>
+	<append xpath="/entity_classes/entity_class[@name='animalSnake']">
+		<property name="AITask" value="
+			Territorial|
+			ApproachAndAttackTarget class=EntityPlayer,15,EntityNPC,15|
+			ApproachSpot|
+			Look|
+			Wander|
+		"/>
+	</append>
+
 	
 <!-- animalBossGrace -->
 	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-1']" />
@@ -219,13 +243,16 @@ EXCEPTIONS:
 	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-6']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-7']" />
 	<remove xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask-8']" />
-	<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='AITask']/@value">
-		Territorial|
-		ApproachAndAttackTarget class=EntityPlayer,30,EntityBandit,15,EntityZombie,10|
-		ApproachSpot|
-		Look|
-		Wander|
-	</set>
+	<append xpath="/entity_classes/entity_class[@name='animalBossGrace']">
+		<property name="AITask" value="
+			Territorial|
+			ApproachAndAttackTarget class=EntityPlayer,30,EntityBandit,15,EntityZombie,10|
+			ApproachSpot|
+			Look|
+			Wander|
+		"/>
+	</append>
+
 
 <!-- zombieDemolition - WILL STILL BreakBlock AND DestroyArea - uncomment below to remove those behaviors -->
 	<!--
