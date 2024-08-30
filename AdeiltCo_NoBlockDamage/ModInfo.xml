@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
-		<Name value="AdeiltCo NoBlockDamage" />
-		<Description value="Prevents/mitigates most enemy AI damage to blocks. Based on JRB_TZ_NoBlockDamage by jrbarrio." />
-		<Author value="adeilt" />
-		<Version value="1.0" />
-	</ModInfo>
+	<Name value="AdeiltCo_NoBlockDamage" />
+	<DisplayName value="AdeiltCo NoBlockDamage" />
+	<Version value="1.0" />
+	<Description value="Prevents/mitigates most enemy AI damage to blocks. Based on JRB_TZ_NoBlockDamage by jrbarrio." />
+	<Author value="adeilt" />
 </xml>
