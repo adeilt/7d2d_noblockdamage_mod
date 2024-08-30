@@ -1,3 +1,6 @@
+This is jrbarrio's original changelog for his mod.  -- adeilt
+-------------------------------------------------------------
+
 Version v13
 Update for A20
 Remove "Swim" from AITask property lists and reorder list
