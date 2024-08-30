@@ -1,4 +1,4 @@
-<TZ_NoBlockDamage>
+<AdeiltCo_NoBlockDamage>
 
 <!--Reduces zombie block damage to 1-->
 	<set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='DamageBlock']/@value">0</set>
@@ -21,4 +21,4 @@
 	<!-- Wolf -->
 	<remove xpath="/items/item[@name='meleeHandAnimalWolf']/effect_group[@name='meleeHandAnimalWolf']/passive_effect[@name='DamageModifier']" />
 	
-</TZ_NoBlockDamage>
+</AdeiltCo_NoBlockDamage>
